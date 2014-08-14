@@ -1,9 +1,16 @@
-body {
-	overflow: hidden;
-	background: url('img/20140605150109-Schoolfy-Best-tool-to-give-homework-teenagers.jpg') no-repeat;
+* {
+	color: white;
+	font-family: "Stag Sans Web", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-style: normal;
 }
 
-div {
+body {
+	overflow: hidden;
+	background: url('../img/20140605150109-Schoolfy-Best-tool-to-give-homework-teenagers.jpg') no-repeat 0 0;
+}
+
+h1, div {
 	border: 1px solid black; /* for testing purposes */
 }
 
@@ -33,5 +40,18 @@ nav {
 }
 
 h1 {
+	display: inline-block;
+}
+
+#upper_navbar {
+	display: inline-block;
+	float: right;
+}
+
+header {
+	min-width: 960px;
+}
+
+header nav {
 	display: inline-block;
 }
