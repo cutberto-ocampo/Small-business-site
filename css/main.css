@@ -21,11 +21,11 @@
 
 body {
 	overflow: hidden;
-	background: url('../img/Skills-All-Students-Should-Know-715x330.jpg') no-repeat;
+	background: url('../img/Children-in-classroom-2048x1151.jpg') no-repeat;
+	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
 	margin-left: 10%;
 	margin-right: 10%;
 	min-width: 960px;
@@ -47,7 +47,7 @@ h2 {
 .navbar {
 	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin: 2;
 	margin-top: 40px;
 	vertical-align: bottom;
 	font-size: 18px;
@@ -63,18 +63,18 @@ h2 {
 	padding: 3px 10px;
 }
 
-.highlighted {
-	border: 2px solid #F5AD16;
-}
-
-.highlighted a:hover {
-	background-color: #F5AD16;
-}
-
 .navbar li a:hover {
 	text-decoration: none;
 }
 
+
+.highlighted {
+	border: 2px solid #F5AD16;
+}
+
+.navbar a:hover {
+	background-color: #F5AD16;
+}
 
 .pull-right {
 	float: right;
