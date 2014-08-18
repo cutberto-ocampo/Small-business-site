@@ -13,25 +13,15 @@
 }
 
 * {
-	color: white;
 	font-family: "Stag Sans Web", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	font-style: normal;
 }
 
 body {
-	overflow: hidden;
-	background: url('../img/Children-in-classroom-2048x1151.jpg') no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	margin-left: 10%;
-	margin-right: 10%;
-	min-width: 960px;
 }
 
-div {
+div, section {
 	border: 1px solid black; /* for testing purposes */
 }
 
@@ -40,13 +30,26 @@ h1 {
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 25px;
 	margin: 0;
+}
+
+.blue-gradient {
+	background: linear-gradient(#A6F0F4, #91DCF2, #36B9E4) no-repeat;
+	background-size: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+}
+
+.wide-container {
+	margin-left: 10%;
+	margin-right: 10%;
+	min-width: 960px;
 }
 
 .navbar {
 	list-style: none;
-	padding: 0;
 	margin: 2;
 	margin-top: 40px;
 	vertical-align: bottom;
@@ -55,25 +58,27 @@ h2 {
 
 .navbar li {
 	display: inline-block;
-	margin: 0 10px;
 }
 
 .navbar li a {
 	text-decoration: none;
-	padding: 3px 10px;
+	margin: 0;
+	padding: 6px 15px;
 }
 
 .navbar li a:hover {
 	text-decoration: none;
 }
 
-
-.highlighted {
+.navbar li:last-child {
+	padding: 4px 0;
 	border: 2px solid #F5AD16;
+	border-radius: 3px;
 }
 
 .navbar a:hover {
 	background-color: #F5AD16;
+	border-radius: 3px;
 }
 
 .pull-right {
@@ -84,7 +89,7 @@ h2 {
 	float: left;
 }
 
-#upper_navbar {
+#upper-navbar {
 
 }
 
@@ -94,4 +99,65 @@ header {
 
 header nav {
 	display: inline-block;
+}
+
+#main-section {
+	height: 400px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#carousel-container {
+}
+
+.testimonials-container {
+	width: 47%;
+	display: inline-block;
+	padding-right: 3%;
+	display: inline-block;
+	border-right: 2px dotted gray;
+	margin-top: 10px;
+}
+
+.press-container {
+	width: 45%;
+	margin-left: 2%;
+	border: 1px solid black;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: justify;
+}
+
+.testimonial {
+	line-height: 12px;
+}
+
+.testimonial :first-child {
+	font-style: italic;
+	font-size: 14px;
+	/*text-align: left;*/
+}
+
+.testimonial :last-child {
+	font-size: 12px;
+	text-align: right;
+}
+
+.light-text {
+	color: #fff;
+}
+
+.dark-text {
+	color: #009BE6;
+}
+
+.press-container :first-child {
+	font-style: italic;
+	font-size: 14px;
+}
+
+.press-container :last-child {
+	font-size: 12px;
+	text-align: right;
+	display: block;
 }
