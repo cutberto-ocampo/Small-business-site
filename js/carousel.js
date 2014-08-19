@@ -4,8 +4,8 @@ $(function() {
         align: false,
         items: 4,
         items: {
-            width: $('#wrapper').width() * 0.15,
-            height: 500,
+            width: $('#wrapper').width() * 0.175,
+            height: 499,
             visible: 1,
             minimum: 1
         },
@@ -21,7 +21,7 @@ $(function() {
  
                 //  resize currentslide to small version
                 currentSlide.stop().animate({
-                    width: _width * 0.15
+                    width: _width * 0.175
                 });     
                 currentSlide.removeClass( 'active' );
  
@@ -31,7 +31,7 @@ $(function() {
                 //  animate clicked slide to large size
                 nextSlide.addClass( 'active' );
                 nextSlide.stop().animate({
-                    width: _width * 0.7
+                    width: _width * 0.65
                 });                     
             },
             onAfter: function(data) {
@@ -50,11 +50,11 @@ $(function() {
             //  show images 
             $('.slide', this).fadeIn();
             $('.slide:first-child', this).addClass( 'active' );
-            $('.slide', this).width( _width * 0.15 );
+            $('.slide', this).width( _width * 0.175 );
  
             //  enlarge first slide
             $('.slide:first-child', this).animate({
-                width: _width * 0.7
+                width: _width * 0.65
             });
  
             //  show first title block and hide the rest
@@ -75,10 +75,10 @@ $(function() {
             _width = $('#wrapper').width();
  
         //  show images
-        slider.find( '.slide' ).width( _width * 0.15 );
+        slider.find( '.slide' ).width( _width * 0.175 );
  
         //  enlarge first slide
-        slider.find( '.slide.active' ).width( _width * 0.7 );
+        slider.find( '.slide.active' ).width( _width * 0.65 );
  
         //  update item width config
         slider.trigger( 'configuration', ['items.width', _width * 0.15] );
