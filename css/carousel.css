@@ -1,33 +1,23 @@
-html, body {
+, body {
     height: 100%;
     padding: 0;
     margin: 0;
 }
 
-/*body {
-    background: #f9f9f3;
-}*/
-
-body * {
-/*    font-family: Arial, Geneva, SunSans-Regular, sans-serif;
-    font-size: 14px;
-    color: #222;
-    line-height: 20px;*/
-}
-
 #wrapper {
     height: 100%;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     min-height: 650px;
-    min-width: 900px;
+    min-width: 960px;
     padding-top: 1px;
 }
 
 #slider {
-    margin: 100px 0 0 0;
+    margin: 0;
     height: 500px;
     overflow: hidden;
-    background: url(img/ajax-loader.gif) center center no-repeat;
+    background: url(../img/ajax-loader.gif) center center no-repeat;
 }
 
 #slider .slide {
